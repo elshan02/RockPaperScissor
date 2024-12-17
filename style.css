@@ -1,0 +1,28 @@
+header {
+    text-align: center;
+}
+
+.playground {
+    width: 40%; 
+    float: left;
+    text-align: center; 
+    padding-top: 10px;
+    padding-left: 210px;
+}
+
+#computer {
+    margin-top: -280px;
+}
+
+.ref {
+    padding-left: 10px;
+    position: relative;
+    margin-top: 120px;
+}
+
+.ref p {
+    font-size: 20px;
+}
+
+
+

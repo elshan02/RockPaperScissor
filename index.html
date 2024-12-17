@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <!-- <main> -->
+    <!--User-->
+        <div class="playground" id="user">
+            <h2>You</h2>
+            <p id="u_score">Score = 0</p>
+            <img id="u_img" src="Images/default.png">
+            <br>
+            Choose: <br>
+            <input type="radio" name="u_choice" id="u_rock" checked>Rock
+            <input type="radio" name="u_choice" id="u_paper">Paper
+            <input type="radio" name="u_choice" id="u_scissors">Scissors
+        </div>
+
+        <!--Game Set-->
+        <div class="ref">
+            <h2>Round: </h2>
+            <p id="rounds">0</p>
+            <h2>Result:</h2>
+            <p id="winner"> </p>
+            <input type="button" value="Let's Go!" id="play" onclick="playGame();">
+            <input type="button" value="Start Again" onclick="resetScore();">
+        </div>
+
+        <!--Computer-->
+        <div class="playground" id="computer">
+            <h2>Computer</h2>
+            <p id="c_score">Score = 0</p>
+            <img id="c_img" src="Images/default.png">
+            <br>
+            Choose: <br>
+            <input type="radio" name="c_choice" id="c_rock" disabled>Rock
+            <input type="radio" name="c_choice" id="c_paper" disabled>Paper
+            <input type="radio" name="c_choice" id="c_scissor" disabled>Scissors
+        </div>
+    <!-- </main> -->
+    <script src="script.js"></script>
+</body>
+</html>
